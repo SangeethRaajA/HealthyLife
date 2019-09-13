@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //TEST 02
+    //GUYS REMAIN USE THIS ACTIVITY AND CREATE YOUR INTENDS
     /*public void bmi(View v){
 
         Intent intent = new Intent(MainActivity.this,BMI.class);
@@ -64,6 +66,6 @@ public class MainActivity extends AppCompatActivity {
         //Intent intent = new Intent(this,expense_home.class);
         startActivity(intent);
     }*/
- 
+
 
 }
