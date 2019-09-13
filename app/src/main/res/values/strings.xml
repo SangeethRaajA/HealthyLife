@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HEALTHY LIFE</string>
+    <string name="update">Update</string>
+    <string name="delete">Remove</string>
+    <string name="add">add</string>
+    <string name="main">MAIN ACTIVITY</string>
+    <string name="hint_task">Enter Expense</string>
+    <string name="hint_date">Enter Date</string>
+    <string name="hint_time">Enter Time</string>
+
+    <string name="bmi_txt">BMI</string>
+    <string name="diet_txt">DIET</string>
+    <string name="reminder_txt">REMINDER</string>
+    <string name="expense_txt">EXPENSE</string>
+
+
+</resources>
