@@ -12,6 +12,7 @@
     <string name="diet_txt">DIET</string>
     <string name="reminder_txt">REMINDER</string>
     <string name="expense_txt">EXPENSE</string>
+    <string name="expense_txt1">EXPENSEs</string>
 
 
 </resources>
