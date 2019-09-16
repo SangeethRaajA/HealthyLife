@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".select_meal"
+    android:background="@drawable/bfast_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/meal_pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/meal_pick" />
+
+        <ImageView
+            android:id="@+id/meal_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/meal_descr" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nuts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/nuts" />
+
+                <EditText
+                    android:id="@+id/nuts_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/nuts_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/noodles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/noodles" />
+
+                <EditText
+                    android:id="@+id/noodles_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/noodles_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/rice" />
+
+                <EditText
+                    android:id="@+id/rice_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/rice_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/cereal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/cereal" />
+
+                <EditText
+                    android:id="@+id/cereal_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cereal_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/oats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/oats" />
+
+                <EditText
+                    android:id="@+id/oats_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/oats_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/bread"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/bread" />
+
+                <EditText
+                    android:id="@+id/bread_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/bread_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/tuna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/tuna" />
+
+                <EditText
+                    android:id="@+id/tuna_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/tuna_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/meat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/red_meat" />
+
+                <EditText
+                    android:id="@+id/meat_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/meat_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/milk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/milk" />
+
+                <EditText
+                    android:id="@+id/milk_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/milk_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/eggs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/eggs" />
+
+                <EditText
+                    android:id="@+id/eggs_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/eggs_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/orange_juice" />
+
+                <EditText
+                    android:id="@+id/orange_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/oranje_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/banana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/banana" />
+
+                <EditText
+                    android:id="@+id/banana_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/banana_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/apple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/apple" />
+
+                <EditText
+                    android:id="@+id/apple_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/apple_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <ImageView
+                    android:id="@+id/Avacado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/avacado" />
+
+                <EditText
+                    android:id="@+id/avacado_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/quantity_text"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="90dp"
+                    android:paddingBottom="10dp" />
+
+                <CheckBox
+                    android:id="@+id/avacado_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_action" />
+
+                <Button
+                    android:id="@+id/next_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/success"
+                    android:onClick="next"
+                    android:text="@string/next_action" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
