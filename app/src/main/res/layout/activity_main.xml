@@ -30,18 +30,19 @@
             android:textSize="24dp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/diet"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/blue"
+    <Button
+        android:id="@+id/diet"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blue"
 
-            android:text="@string/diet_txt"
-            android:textSize="24dp"
-            android:textStyle="bold" />
+        android:onClick="diet"
+        android:text="@string/diet_txt"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/reminder"
