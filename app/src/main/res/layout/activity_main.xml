@@ -43,31 +43,31 @@
             android:textSize="24dp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/reminder"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/blue"
+    <Button
+        android:id="@+id/reminder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blue"
 
-            android:text="@string/reminder_txt"
-            android:textSize="24dp"
-            android:textStyle="bold" />
+        android:onClick="reminder"
+        android:text="@string/reminder_txt"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/mainButton"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/blue"
-            android:onClick="record"
-            android:text="@string/expense_txt"
-            android:textSize="24dp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blue"
+        android:text="@string/expense_txt"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
 
 
