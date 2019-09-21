@@ -27,7 +27,7 @@ public class TaskAdaptor extends RecyclerView.Adapter<TaskViewHolder> implements
     private Context context;
     private ArrayList<Tasks> listTasks;
     private ArrayList<Tasks> mArraylist;
-    private SqliteDatabase mdatabase;
+    private taskDatabase mdatabase;
     DatePickerDialog datePickerDialog;
     TimePickerDialog timePickerDialog;
 
@@ -35,7 +35,7 @@ public class TaskAdaptor extends RecyclerView.Adapter<TaskViewHolder> implements
         this.context = context;
         this.listTasks = listTasks;
         this.mArraylist = listTasks;
-        this.mdatabase =  new SqliteDatabase(context);
+        this.mdatabase =  new taskDatabase(context);
     }
 
     @NonNull

@@ -10,7 +10,7 @@ import android.support.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class SqliteDatabase extends SQLiteOpenHelper {
+public class taskDatabase extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 5;
     private static final String DATABASE_NAME = "ToDo_Databse";
@@ -21,7 +21,7 @@ public class SqliteDatabase extends SQLiteOpenHelper {
     private static final String COLUMN_DATE = "date_col";
     private static final String COLUMN_TIME = "time_col";
 
-    public SqliteDatabase(Context context) {
+    public taskDatabase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

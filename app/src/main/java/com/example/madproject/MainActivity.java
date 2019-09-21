@@ -1,21 +1,10 @@
 package com.example.madproject;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void reminder(View v){
-        Intent intent = new Intent(this,Add_ToDo.class);
+        Intent intent = new Intent(this, add_task.class);
         startActivity(intent);
     }
 

@@ -24,10 +24,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class Add_ToDo extends AppCompatActivity {
+public class add_task extends AppCompatActivity {
 
 
-    private SqliteDatabase mDatabase;
+    private taskDatabase mDatabase;
     private ArrayList<Tasks> allTasks = new ArrayList<>();
     private TaskAdaptor mAdapter;
     DatePickerDialog datePickerDialog;
@@ -43,7 +43,7 @@ public class Add_ToDo extends AppCompatActivity {
         listview.setLayoutManager(linearLayoutManager);
         listview.setHasFixedSize(true);
 
-        mDatabase = new SqliteDatabase(this);
+        mDatabase = new taskDatabase(this);
         allTasks = mDatabase.listTasks();
 
         if(allTasks.size() > 0){
@@ -53,7 +53,7 @@ public class Add_ToDo extends AppCompatActivity {
 
         }else {
             listview.setVisibility(View.GONE);
-            Toast.makeText(this, "There is no contact in the database. Start adding now", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "No Tasks", Toast.LENGTH_LONG).show();
         }
 
         Button opnDialog = findViewById(R.id.pluseButton);
@@ -73,8 +73,6 @@ public class Add_ToDo extends AppCompatActivity {
         final EditText taskField = (EditText)subView.findViewById(R.id.etTask);
         final EditText dateField = (EditText)subView.findViewById(R.id.etDate);
         final EditText timeField = (EditText)subView.findViewById(R.id.etTime);
-        ///poddak methana gahala balamu date time picker eka
-
         dateField.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +82,7 @@ public class Add_ToDo extends AppCompatActivity {
                 int month = calendar.get(Calendar.MONTH);
                 final int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-                datePickerDialog = new DatePickerDialog(Add_ToDo.this, new DatePickerDialog.OnDateSetListener() {
+                datePickerDialog = new DatePickerDialog(add_task.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
 
@@ -105,7 +103,7 @@ public class Add_ToDo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                timePickerDialog = new TimePickerDialog(Add_ToDo.this, new TimePickerDialog.OnTimeSetListener() {
+                timePickerDialog = new TimePickerDialog(add_task.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hour, int minute) {
 
@@ -132,13 +130,11 @@ public class Add_ToDo extends AppCompatActivity {
             }
         } );
 
-        ////////////////////////////////////////////////
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Add New Task");
         builder.setView(subView);
         builder.create();
 
-        //mthanata thamai man hithanne date and time pickers enna one balamu passe dala
 
         builder.setPositiveButton("ADD TASK", new DialogInterface.OnClickListener() {
             @Override
@@ -148,7 +144,7 @@ public class Add_ToDo extends AppCompatActivity {
                 final String time = timeField.getText().toString();
 
                 if(TextUtils.isEmpty(task)){
-                    Toast.makeText(Add_ToDo.this, "Something went wrong. Check your input values", Toast.LENGTH_LONG).show();
+                    Toast.makeText(add_task.this, "Input Invalid", Toast.LENGTH_LONG).show();
                 }
                 else{
                     Tasks newTask = new Tasks(task,date,time);
@@ -163,7 +159,6 @@ public class Add_ToDo extends AppCompatActivity {
         builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(Add_ToDo.this, "Task cancelled", Toast.LENGTH_LONG).show();
             }
         });
         builder.show();
@@ -205,10 +200,4 @@ public class Add_ToDo extends AppCompatActivity {
             }
         });
     }
-
-    /*public void viewDate(View view)
-    {
-
-
-    }*/
 }

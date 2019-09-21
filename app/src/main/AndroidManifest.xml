@@ -15,7 +15,7 @@
         <activity android:name=".history" />
         <activity android:name=".select_meal" />
         <activity android:name=".diet" />
-        <activity android:name=".Add_ToDo" />
+        <activity android:name=".add_task" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
