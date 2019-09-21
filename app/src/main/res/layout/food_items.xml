@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+
+    <TextView
+        android:id="@+id/txt_Calories"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="Food name"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="376dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt_Calories"
+        android:layout_alignEnd="@+id/txt_Calories"
+        android:layout_alignRight="@+id/txt_Calories"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Price"
+        android:textAlignment="center"
+        android:textColor="#0A0909"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

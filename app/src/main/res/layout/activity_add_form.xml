@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_form"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bfast_back">
+
+    <EditText
+        android:id="@+id/Edt_Calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:paddingTop="50dp"/>
+
+    <EditText
+        android:id="@+id/Edt_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Enter Date"
+        android:paddingTop="30dp"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/Add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#4CAF50"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/List_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIST"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:background="#FF9800"
+        android:textColor="#0E0D0D"/>
+
+
+</LinearLayout>

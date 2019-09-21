@@ -30,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void viewMyMain(View v)
+    /*public void viewMyMain(View v)
     {
         Intent i = new Intent(this,Add_ToDo.class);
         startActivity(i);
 
-    }
+    }*/
 
     /*public void record(View v){
 

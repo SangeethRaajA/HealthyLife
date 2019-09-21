@@ -52,12 +52,6 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/nuts_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
-
                 <ImageView
                     android:id="@+id/noodles"
                     android:layout_width="match_parent"
@@ -76,11 +70,6 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/noodles_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
 
                 <ImageView
                     android:id="@+id/rice"
@@ -100,11 +89,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/rice_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/cereal"
@@ -124,12 +109,6 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/cereal_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
-
                 <ImageView
                     android:id="@+id/oats"
                     android:layout_width="match_parent"
@@ -148,11 +127,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/oats_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/bread"
@@ -172,11 +147,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/bread_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/tuna"
@@ -184,7 +155,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     app:srcCompat="@drawable/tuna" />
-
                 <EditText
                     android:id="@+id/tuna_txt"
                     android:layout_width="match_parent"
@@ -196,11 +166,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/tuna_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/meat"
@@ -220,11 +186,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/meat_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/milk"
@@ -232,6 +194,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     app:srcCompat="@drawable/milk" />
+
+
 
                 <EditText
                     android:id="@+id/milk_txt"
@@ -244,11 +208,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/milk_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/eggs"
@@ -268,11 +228,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/eggs_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/orange"
@@ -292,11 +248,6 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/oranje_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
 
                 <ImageView
                     android:id="@+id/banana"
@@ -316,11 +267,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/banana_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/apple"
@@ -340,11 +287,7 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/apple_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
+
 
                 <ImageView
                     android:id="@+id/Avacado"
@@ -364,11 +307,6 @@
                     android:paddingLeft="90dp"
                     android:paddingBottom="10dp" />
 
-                <CheckBox
-                    android:id="@+id/avacado_chk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_action" />
 
                 <Button
                     android:id="@+id/next_btn"
