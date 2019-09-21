@@ -17,5 +17,7 @@
     <string name="select_action">Select</string>
     <string name="next_action">Next</string>
     <string name="title_activity_meal">meal</string>
+    <string name="create_btn">ADD</string>
+    <string name="history_btn">HISTORY</string>
 
 </resources>
