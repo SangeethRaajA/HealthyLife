@@ -37,7 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
     }*/
 
+
     /*public void record(View v){
+
+    public void reminder(View v){
+
 
         Intent intent = new Intent(this,Add_ToDo.class);
         //Intent intent = new Intent(this,expense_home.class);
@@ -46,7 +50,13 @@ public class MainActivity extends AppCompatActivity {
 
     //TEST 02
     //GUYS REMAIN USE THIS ACTIVITY AND CREATE YOUR INTENDS
+
     public void bmi(View v){
+
+
+    //test 03 add branch
+    /*public void bmi(View v){
+
 
         Intent intent = new Intent(MainActivity.this,BMI.class);
         //Intent intent = new Intent(this,expense_home.class);
