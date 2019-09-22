@@ -113,7 +113,8 @@ public class select_meal extends AppCompatActivity {
         }
 
         Intent i2=new Intent(this,display_count.class);
-        String value=Double.toString(val);
+        String input=String.format("%.2f",val);
+        String value=input;
         i2.putExtra("total",value);
         startActivity(i2);
     }
