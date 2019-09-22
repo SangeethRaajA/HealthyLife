@@ -10,4 +10,11 @@
     <color name="grey">#A9A9A9</color>
     <color name="success">#5CD131</color>
 
+    <!-- bmi  colour!-->
+
+    <color name="txtViewClr">#FFEE4611</color>
+    <color name="heading">#181816</color>
+    <color name="txts">#FF181816</color>
+    <color name="bg">#FF5F5F5E</color>
+
 </resources>
