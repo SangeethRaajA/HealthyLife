@@ -42,11 +42,12 @@ public class FoodList extends AppCompatActivity {
 
     private static final String TAG="FoodList";
     private DatePickerDialog.OnDateSetListener mDateSetListener;
-    EditText EDTDate;
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.food_list_activity);
+
+
 
         gridView = (GridView) findViewById(R.id.gridView);
         list = new ArrayList<>();
@@ -102,6 +103,9 @@ public class FoodList extends AppCompatActivity {
                 return true;
             }
         });
+
+
+
     }
 
     private void showDialogUpdate(Activity activity, final int position){
@@ -120,6 +124,34 @@ public class FoodList extends AppCompatActivity {
         int height = (int) (activity.getResources().getDisplayMetrics().heightPixels * 0.7);
         dialog.getWindow().setLayout(width, height);
         dialog.show();
+
+            edtDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Calendar cal = Calendar.getInstance();
+                    int year = cal.get(Calendar.YEAR);
+                    int month = cal.get(Calendar.MONTH);
+                    int day = cal.get(Calendar.DAY_OF_MONTH);
+
+                    DatePickerDialog dialog = new DatePickerDialog(
+                            FoodList.this,
+                            android.R.style.Theme_Holo_Light_Dialog_MinWidth,
+                            mDateSetListener,
+                            year, month, day);
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.show();
+                }
+            });
+
+            mDateSetListener = new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                    month = month + 1;
+                    Log.d(TAG, "onDateSet:dd/mm/yyy" + day + "/" + month + "/" + year);
+                    String date = day + "/" + month + "/" + year;
+                    edtDate.setText(date);
+                }
+            };
 
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
