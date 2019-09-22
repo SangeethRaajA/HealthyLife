@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bmi(View v){
-        Intent intent = new Intent(MainActivity.this,bmi.class);
+        Intent intent = new Intent(MainActivity.this,BMImain.class);
         startActivity(intent);
     }
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void expense(View v){
-        Intent intent = new Intent(MainActivity.this,expense.class);
+        Intent intent = new Intent(MainActivity.this,expenseHome.class);
         startActivity(intent);
     }
 

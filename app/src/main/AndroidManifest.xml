@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".expenseHome"></activity>
-        <activity android:name=".bmi" />
-        <activity android:name=".expense" />
         <activity android:name=".display_count" />
         <activity android:name=".history" />
         <activity android:name=".select_meal" />
