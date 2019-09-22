@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+ 
+        <activity android:name=".Add_form"></activity>
         <activity android:name=".expenseHome"></activity>
+ 
         <activity android:name=".display_count" />
         <activity android:name=".history" />
         <activity android:name=".select_meal" />
         <activity android:name=".diet" />
-        <activity android:name=".Add_ToDo" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FoodList"
+            android:label="Food List"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

@@ -21,7 +21,7 @@ public class diet extends AppCompatActivity {
     }
     public void history(View v5)
     {
-        Intent i5=new Intent(this,history.class);
+        Intent i5=new Intent(this,FoodList.class);
         startActivity(i5);
     }
 

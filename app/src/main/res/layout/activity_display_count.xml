@@ -31,7 +31,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
 
-        android:text="450 Calories"
+        android:text=""
+        android:textAlignment="center"
         android:textColor="#161716"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,5 +75,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/save_btn"
         app:layout_constraintVertical_bias="0.226" />
+
+    <TextView
+        android:id="@+id/cal"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/calories"
+        android:textAlignment="center"
+        android:textColor="#161716"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/save_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_txt"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

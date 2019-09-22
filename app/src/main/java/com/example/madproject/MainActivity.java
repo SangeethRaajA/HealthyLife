@@ -25,7 +25,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button mainButton = findViewById(R.id.mainButton);
+
+
+
     }
+
+    /*public void viewMyMain(View v)
+    {
+        Intent i = new Intent(this,Add_ToDo.class);
+        startActivity(i);
+
+    }*/
+
+    }
+
 
     public void reminder(View v){
         Intent intent = new Intent(this,Add_ToDo.class);
