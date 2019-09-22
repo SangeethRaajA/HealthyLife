@@ -7,6 +7,14 @@
     <color name="colorUpdate">#228B6A</color>
     <color name="colorDelete">#E91E63</color>
     <color name="colorText">#FFFFFF</color>
+    <color name="grey">#A9A9A9</color>
     <color name="success">#5CD131</color>
+
+    <!-- bmi  colour!-->
+
+    <color name="txtViewClr">#FFEE4611</color>
+    <color name="heading">#181816</color>
+    <color name="txts">#FF181816</color>
+    <color name="bg">#FF5F5F5E</color>
 
 </resources>

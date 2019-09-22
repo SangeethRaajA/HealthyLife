@@ -25,7 +25,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/blue"
-
+            android:onClick="bmi"
             android:text="@string/bmi_txt"
             android:textSize="24dp"
             android:textStyle="bold" />
@@ -38,7 +38,6 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/blue"
-
         android:onClick="diet"
         android:text="@string/diet_txt"
         android:textSize="24dp"
@@ -52,7 +51,6 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/blue"
-
         android:onClick="reminder"
         android:text="@string/reminder_txt"
         android:textSize="24dp"
@@ -66,6 +64,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/blue"
+        android:onClick="expense"
         android:text="@string/expense_txt"
         android:textSize="24dp"
         android:textStyle="bold" />
