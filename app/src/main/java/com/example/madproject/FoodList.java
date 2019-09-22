@@ -2,6 +2,7 @@ package com.example.madproject;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,6 +10,8 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -20,6 +23,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -28,12 +32,17 @@ import android.widget.Toast;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class FoodList extends AppCompatActivity {
 
     GridView gridView;
     ArrayList<Food> list;
     FoodListAdapter adapter = null;
+
+    private static final String TAG="FoodList";
+    private DatePickerDialog.OnDateSetListener mDateSetListener;
+    EditText EDTDate;
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +111,7 @@ public class FoodList extends AppCompatActivity {
         dialog.setTitle("Update");
 
         final EditText edtCalories = (EditText) dialog.findViewById(R.id.update_Cal);
-        final EditText edtDate = (EditText) dialog.findViewById(R.id.update_date);
+        final EditText edtDate=(EditText) dialog.findViewById(R.id.update_date);
         Button btnUpdate = (Button) dialog.findViewById(R.id.btnUpdate);
 
         // set width for dialog
@@ -117,13 +126,18 @@ public class FoodList extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Add_form.sqLiteHelper.updateData(
-                            edtCalories.getText().toString().trim(),
-                            edtDate.getText().toString().trim(),
-                            position
-                    );
-                    dialog.dismiss();
-                    Toast.makeText(getApplicationContext(), "Update successfully!!!",Toast.LENGTH_SHORT).show();
+                    if(edtCalories.getText().toString().equals("") || edtDate.getText().toString().equals("")){
+                        Toast.makeText(getApplicationContext(), "Fill The Fields!!!",Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Add_form.sqLiteHelper.updateData(
+                                edtCalories.getText().toString().trim(),
+                                edtDate.getText().toString().trim(),
+                                position
+                        );
+                        dialog.dismiss();
+                        Toast.makeText(getApplicationContext(), "Update successfully!!!", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 catch (Exception error) {
                     Log.e("Update error", error.getMessage());
