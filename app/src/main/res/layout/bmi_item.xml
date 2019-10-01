@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="Nameeeee"
+        android:textAlignment="center"
+        android:textColor="#0009ff"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Height"
+
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeight"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Weight"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/txtBmi"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWeight"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:text="Bmi"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+
+
+
+</RelativeLayout>

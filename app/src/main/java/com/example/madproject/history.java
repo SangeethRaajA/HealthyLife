@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.madproject.R;
+
 import java.util.List;
 
 public class history extends AppCompatActivity {

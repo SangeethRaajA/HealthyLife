@@ -9,38 +9,36 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class FoodListAdapter extends BaseAdapter {
+public class BmiListAdapter extends BaseAdapter {
 
     private Context context;
     private  int layout;
-    private ArrayList<Food> foodsList;
+    private ArrayList<Bmi> bmiList;
 
-    public FoodListAdapter(Context context, int layout, ArrayList<Food> foodsList) {
+    public BmiListAdapter(Context context, int layout, ArrayList<Bmi> bmiList) {
         this.context = context;
         this.layout = layout;
-        this.foodsList = foodsList;
+        this.bmiList = bmiList;
     }
 
     @Override
     public int getCount() {
-
-        return foodsList.size();
+        return bmiList.size();
     }
 
     @Override
     public Object getItem(int position) {
-
-        return foodsList.get(position);
+        return bmiList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-
         return position;
     }
 
     private class ViewHolder{
-        TextView txtCalory, txtDate;
+
+        TextView txtName, txtHeight, txtWeight, txtAns;
     }
 
     @Override
@@ -53,19 +51,28 @@ public class FoodListAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(layout, null);
 
-            holder.txtCalory = (TextView) row.findViewById(R.id.txt_Calories);
-            holder.txtDate = (TextView) row.findViewById(R.id.txt_date);
+            holder.txtName = (TextView) row.findViewById(R.id.txtName);
+            holder.txtHeight = (TextView) row.findViewById(R.id.txtHeight);
+            holder.txtWeight = (TextView) row.findViewById(R.id.txtWeight);
+            holder.txtAns = (TextView) row.findViewById(R.id.txtBmi);
+
             row.setTag(holder);
         }
         else {
             holder = (ViewHolder) row.getTag();
         }
 
-        Food food = foodsList.get(position);
+        Bmi bmi = bmiList.get(position);
 
-        holder.txtCalory.setText(food.getCalories());
-        holder.txtDate.setText(food.getDate());
-        
+        holder.txtName.setText(bmi.getName());
+        holder.txtHeight.setText("Height : "+bmi.getHeight());
+        holder.txtWeight.setText("Weight : "+bmi.getWeight());
+        holder.txtAns.setText("BMI : "+bmi.getAns());
+
+
+
+
+
         return row;
     }
 }
